@@ -5,7 +5,7 @@ def leaky_relu(x, alpha=0.01):
     return tf.maximum(alpha * x, x)
 
 def create_cell(dim, n_layers, dropout):
-    cell = tf.nn.rnn_cell.GRUCell(dim)
+    cell = tf.nn.rnn_cell.GRUCell(dim)  #dim为隐层神经元个数
     cell = tf.nn.rnn_cell.DropoutWrapper(cell,
         input_keep_prob=dropout)
     if n_layers > 1:

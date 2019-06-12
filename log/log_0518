@@ -212,31 +212,3 @@ step 141000, time 15982s, loss nan, rec nan, adv nan, d0 nan, d1 nan
 step 142000, time 16074s, loss nan, rec nan, adv nan, d0 nan, d1 nan
 step 143000, time 16167s, loss nan, rec nan, adv nan, d0 nan, d1 nan
 dev loss nan, rec nan, adv nan, d0 nan, d1 nan
---------------------epoch 12--------------------
-learning_rate: 0.0005   gamma: 0.01
-step 144000, time 16317s, loss nan, rec nan, adv nan, d0 nan, d1 nan
-step 145000, time 16409s, loss nan, rec nan, adv nan, d0 nan, d1 nan
-step 146000, time 16500s, loss nan, rec nan, adv nan, d0 nan, d1 nan
-step 147000, time 16591s, loss nan, rec nan, adv nan, d0 nan, d1 nan
-step 148000, time 16683s, loss nan, rec nan, adv nan, d0 nan, d1 nan
-step 149000, time 16775s, loss nan, rec nan, adv nan, d0 nan, d1 nan
-step 150000, time 16867s, loss nan, rec nan, adv nan, d0 nan, d1 nan
-step 151000, time 16958s, loss nan, rec nan, adv nan, d0 nan, d1 nan
-step 152000, time 17051s, loss nan, rec nan, adv nan, d0 nan, d1 nan
-step 153000, time 17143s, loss nan, rec nan, adv nan, d0 nan, d1 nan
-step 154000, time 17236s, loss nan, rec nan, adv nan, d0 nan, d1 nan
-step 155000, time 17330s, loss nan, rec nan, adv nan, d0 nan, d1 nan
-step 156000, time 17423s, loss nan, rec nan, adv nan, d0 nan, d1 nan
-dev loss nan, rec nan, adv nan, d0 nan, d1 nan
---------------------epoch 13--------------------
-learning_rate: 0.0005   gamma: 0.01
-step 157000, time 17571s, loss nan, rec nan, adv nan, d0 nan, d1 nan
-step 158000, time 17663s, loss nan, rec nan, adv nan, d0 nan, d1 nan
-step 159000, time 17754s, loss nan, rec nan, adv nan, d0 nan, d1 nan
-step 160000, time 17844s, loss nan, rec nan, adv nan, d0 nan, d1 nan
-step 161000, time 17937s, loss nan, rec nan, adv nan, d0 nan, d1 nan
-step 162000, time 18029s, loss nan, rec nan, adv nan, d0 nan, d1 nan
-step 163000, time 18121s, loss nan, rec nan, adv nan, d0 nan, d1 nan
-step 164000, time 18213s, loss nan, rec nan, adv nan, d0 nan, d1 nan
-step 165000, time 18305s, loss nan, rec nan, adv nan, d0 nan, d1 nan
-step 166000, time 18398s, loss nan, rec nan, adv nan, d0 nan, d1 nan

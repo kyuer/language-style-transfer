@@ -173,6 +173,52 @@ def transfer(model, decoder, sess, args, vocab, data0, data1, out_path):
             model.loss_rec, model.loss_adv, model.loss_d0, model.loss_d1],
             feed_dict=feed_dictionary(model, batch, args.rho, args.gamma_min))
         losses.add([loss, loss_rec, loss_adv, loss_d0, loss_d1])
+    #
+    # with tf.Graph().as_default():
+    #     sess = tf.Session()
+    #     with sess.as_default():
+    #         m = model.Model()
+    #         m = model.Model()
+    #         global_step = tf.Variable(0, name='global_step', trainable=False)
+    #         optimizer = tf.train.AdamOptimizer(1e-2)
+    #         grads_and_vars = optimizer.compute_gradients(m.loss)
+    #         train_op = optimizer.apply_gradients(grads_and_vars=grads_and_vars, global_step=global_step)
+    #
+    #         loss_summary = tf.summary.scalar('loss', m.loss)
+    #
+    #         train_summary_op = tf.summary.merge([loss_summary])
+    #         train_summary_writer = tf.summary.FileWriter('./summary/train', sess.graph)
+    #
+    #         dev_summary_op = tf.summary.merge([loss_summary])
+    #         dev_summary_writer = tf.summary.FileWriter('./summary/dev', sess.graph)
+    #
+    #         def train_step(x_batch, y_batch):
+    #             feed_dict = {m.input_x: x_batch,
+    #                          m.input_y: y_batch}
+    #             _, step, summaries, loss = sess.run(
+    #                 [train_op, global_step, train_summary_op, m.loss], feed_dict)
+    #             train_summary_writer.add_summary(summaries, step)
+    #
+    #         def dev_step(x_batch, y_batch):
+    #             feed_dict = {m.input_x: x_batch,
+    #                          m.input_y: y_batch}
+    #
+    #             step, summaries, loss = sess.run(
+    #                 [global_step, dev_summary_op, m.loss], feed_dict)
+    #             dev_summary_writer.add_summary(summaries, step)
+    #
+    #         sess.run(tf.global_variables_initializer())
+    #         batches = batch_iter(list(zip(x_train, y_train)), 100, 100)
+    #         for batch in batches:
+    #             x_batch, y_batch = zip(*batch)
+    #             train_step(x_batch, y_batch)
+    #             current_step = tf.train.global_step(sess, global_step)
+    #             if current_step % 3 == 0:
+    #                 print('\nEvaluation:')
+    #                 dev_step(x_val, y_val)
+    #
+    #
+    # tf.summary.scalar('loss', loss)
 
     n0, n1 = len(data0), len(data1)
     #data0_rec = reorder(order0, data0_rec)[:n0]

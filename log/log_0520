@@ -1,0 +1,312 @@
+{   'batch_size': 64,
+    'beam': 1,
+    'dev': '../data/valid',
+    'dim_emb': 100,
+    'dim_y': 200,
+    'dim_z': 500,
+    'dropout_keep_prob': 0.5,
+    'embedding': '',
+    'filter_sizes': '1,2,3,4,5',
+    'gamma_decay': 0.8,
+    'gamma_init': 0.1,
+    'gamma_min': 0.01,
+    'learning_rate': 0.0001,
+    'load_model': False,
+    'max_epochs': 20,
+    'max_seq_length': 20,
+    'max_train_size': -1,
+    'model': '../tmp/model',
+    'n_filters': 128,
+    'n_layers': 1,
+    'online_testing': False,
+    'output': '../tmp/wuxia.dev',
+    'rho': 1,
+    'steps_per_checkpoint': 1000,
+    'test': '',
+    'train': '../data/train',
+    'vocab': '../tmp/wuxia.vocab'}
+--------------------epoch 1--------------------
+learning_rate: 0.0001   gamma: 0.1
+step 1000, time 110s, loss 61.67, rec 59.48, adv 2.19, d0 1.34, d1 1.10
+step 2000, time 208s, loss 58.24, rec 55.87, adv 2.37, d0 1.26, d1 1.07
+step 3000, time 309s, loss 59.34, rec 56.97, adv 2.37, d0 1.24, d1 1.07
+step 4000, time 413s, loss 55.06, rec 52.68, adv 2.38, d0 1.22, d1 1.08
+step 5000, time 516s, loss 54.40, rec 51.88, adv 2.52, d0 1.18, d1 1.04
+step 6000, time 621s, loss 52.78, rec 50.16, adv 2.61, d0 1.17, d1 1.04
+step 7000, time 727s, loss 53.51, rec 50.88, adv 2.63, d0 1.16, d1 1.02
+step 8000, time 833s, loss 51.68, rec 49.05, adv 2.64, d0 1.15, d1 1.02
+step 9000, time 941s, loss 50.93, rec 48.15, adv 2.78, d0 1.13, d1 0.98
+step 10000, time 1048s, loss 50.87, rec 48.02, adv 2.85, d0 1.11, d1 0.97
+step 11000, time 1157s, loss 50.29, rec 47.32, adv 2.96, d0 1.07, d1 0.93
+step 12000, time 1267s, loss 51.83, rec 48.78, adv 3.05, d0 1.06, d1 0.94
+step 13000, time 1377s, loss 50.23, rec 47.23, adv 3.00, d0 1.06, d1 0.94
+dev loss 45.29, rec 42.96, adv 2.33, d0 1.21, d1 1.97
+saving model...
+--------------------epoch 2--------------------
+learning_rate: 0.0001   gamma: 0.08000000000000002
+step 14000, time 1559s, loss 48.61, rec 45.54, adv 3.07, d0 1.08, d1 0.94
+step 15000, time 1668s, loss 48.64, rec 45.56, adv 3.08, d0 1.05, d1 0.95
+step 16000, time 1780s, loss 50.88, rec 47.75, adv 3.14, d0 1.03, d1 0.92
+step 17000, time 1892s, loss 48.21, rec 45.18, adv 3.03, d0 1.04, d1 0.95
+step 18000, time 2003s, loss 48.76, rec 45.59, adv 3.17, d0 1.02, d1 0.92
+step 19000, time 2113s, loss 46.90, rec 43.71, adv 3.20, d0 1.01, d1 0.91
+step 20000, time 2224s, loss 48.87, rec 45.66, adv 3.21, d0 1.01, d1 0.91
+step 21000, time 2335s, loss 47.53, rec 44.35, adv 3.17, d0 1.01, d1 0.92
+step 22000, time 2445s, loss 46.44, rec 43.17, adv 3.27, d0 1.01, d1 0.91
+step 23000, time 2556s, loss 46.84, rec 43.53, adv 3.31, d0 1.00, d1 0.91
+step 24000, time 2665s, loss 46.62, rec 43.28, adv 3.33, d0 1.04, d1 0.99
+step 25000, time 2777s, loss 47.48, rec 44.22, adv 3.26, d0 0.99, d1 0.92
+step 26000, time 2888s, loss 46.62, rec 43.35, adv 3.27, d0 0.98, d1 0.93
+dev loss 40.00, rec 37.82, adv 2.18, d0 1.23, d1 1.78
+saving model...
+--------------------epoch 3--------------------
+learning_rate: 0.0001   gamma: 0.06400000000000002
+step 27000, time 3069s, loss 45.72, rec 42.44, adv 3.28, d0 1.00, d1 0.91
+step 28000, time 3180s, loss 45.11, rec 41.80, adv 3.31, d0 1.00, d1 0.93
+step 29000, time 3291s, loss 47.83, rec 44.34, adv 3.49, d0 0.99, d1 0.94
+step 30000, time 3404s, loss 45.19, rec 41.87, adv 3.32, d0 0.97, d1 0.95
+step 31000, time 3516s, loss 45.88, rec 42.38, adv 3.50, d0 0.93, d1 0.88
+step 32000, time 3627s, loss 43.85, rec 40.33, adv 3.52, d0 0.92, d1 0.88
+step 33000, time 3739s, loss 46.83, rec 43.24, adv 3.60, d0 0.93, d1 0.86
+step 34000, time 3850s, loss 45.13, rec 41.53, adv 3.61, d0 0.93, d1 0.87
+step 35000, time 3960s, loss 44.92, rec 41.25, adv 3.67, d0 0.95, d1 0.87
+step 36000, time 4070s, loss 45.45, rec 41.77, adv 3.68, d0 0.94, d1 0.87
+step 37000, time 4180s, loss 45.17, rec 41.58, adv 3.60, d0 0.96, d1 0.89
+step 38000, time 4291s, loss 46.04, rec 42.46, adv 3.58, d0 0.96, d1 0.88
+step 39000, time 4401s, loss 45.53, rec 41.96, adv 3.57, d0 0.96, d1 0.89
+dev loss 38.10, rec 35.81, adv 2.29, d0 1.52, d1 1.98
+saving model...
+--------------------epoch 4--------------------
+learning_rate: 0.0001   gamma: 0.051200000000000016
+step 40000, time 4582s, loss 44.32, rec 40.69, adv 3.62, d0 0.97, d1 0.88
+step 28000, time 3180s, loss 45.11, rec 41.80, adv 3.31, d0 1.00, d1 0.93
+step 29000, time 3291s, loss 47.83, rec 44.34, adv 3.49, d0 0.99, d1 0.94
+step 30000, time 3404s, loss 45.19, rec 41.87, adv 3.32, d0 0.97, d1 0.95
+step 31000, time 3516s, loss 45.88, rec 42.38, adv 3.50, d0 0.93, d1 0.88
+step 32000, time 3627s, loss 43.85, rec 40.33, adv 3.52, d0 0.92, d1 0.88
+step 33000, time 3739s, loss 46.83, rec 43.24, adv 3.60, d0 0.93, d1 0.86
+step 34000, time 3850s, loss 45.13, rec 41.53, adv 3.61, d0 0.93, d1 0.87
+step 35000, time 3960s, loss 44.92, rec 41.25, adv 3.67, d0 0.95, d1 0.87
+step 36000, time 4070s, loss 45.45, rec 41.77, adv 3.68, d0 0.94, d1 0.87
+step 37000, time 4180s, loss 45.17, rec 41.58, adv 3.60, d0 0.96, d1 0.89
+step 38000, time 4291s, loss 46.04, rec 42.46, adv 3.58, d0 0.96, d1 0.88
+step 39000, time 4401s, loss 45.53, rec 41.96, adv 3.57, d0 0.96, d1 0.89
+dev loss 38.10, rec 35.81, adv 2.29, d0 1.52, d1 1.98
+saving model...
+--------------------epoch 4--------------------
+learning_rate: 0.0001   gamma: 0.051200000000000016
+step 40000, time 4582s, loss 44.32, rec 40.69, adv 3.62, d0 0.97, d1 0.88
+step 41000, time 4692s, loss 44.42, rec 40.80, adv 3.62, d0 0.95, d1 0.89
+step 42000, time 4803s, loss 46.26, rec 42.50, adv 3.76, d0 0.94, d1 0.87
+step 43000, time 4915s, loss 44.70, rec 41.06, adv 3.64, d0 0.95, d1 0.89
+step 44000, time 5025s, loss 45.20, rec 41.49, adv 3.71, d0 0.96, d1 0.91
+step 45000, time 5133s, loss 42.72, rec 39.10, adv 3.62, d0 0.94, d1 0.90
+step 46000, time 5244s, loss 45.49, rec 41.82, adv 3.68, d0 0.94, d1 0.90
+step 47000, time 5353s, loss 43.27, rec 39.66, adv 3.61, d0 0.95, d1 0.92
+step 48000, time 5461s, loss 42.67, rec 39.07, adv 3.61, d0 0.95, d1 0.93
+step 49000, time 5570s, loss 43.19, rec 39.62, adv 3.57, d0 0.94, d1 0.91
+step 50000, time 5679s, loss 43.68, rec 40.17, adv 3.50, d0 0.95, d1 0.91
+step 51000, time 5789s, loss 44.26, rec 40.59, adv 3.67, d0 0.91, d1 0.88
+step 52000, time 5898s, loss 44.36, rec 40.63, adv 3.73, d0 0.92, d1 0.89
+dev loss 35.78, rec 33.28, adv 2.50, d0 1.28, d1 1.79
+saving model...
+--------------------epoch 5--------------------
+learning_rate: 0.0001   gamma: 0.04096000000000002
+step 53000, time 6076s, loss 42.35, rec 38.67, adv 3.68, d0 0.92, d1 0.89
+step 54000, time 6185s, loss 43.35, rec 39.54, adv 3.81, d0 0.92, d1 0.88
+step 55000, time 6295s, loss 44.40, rec 40.61, adv 3.79, d0 0.91, d1 0.88
+step 56000, time 6406s, loss 43.49, rec 39.81, adv 3.68, d0 0.92, d1 0.90
+step 57000, time 6515s, loss 43.72, rec 39.86, adv 3.87, d0 0.91, d1 0.87
+step 58000, time 6624s, loss 41.96, rec 38.17, adv 3.79, d0 0.90, d1 0.88
+step 59000, time 6734s, loss 44.28, rec 40.44, adv 3.84, d0 0.92, d1 0.88
+step 60000, time 6844s, loss 42.46, rec 38.74, adv 3.72, d0 0.92, d1 0.88
+step 61000, time 6954s, loss 41.68, rec 38.01, adv 3.67, d0 0.93, d1 0.90
+step 62000, time 7064s, loss 42.59, rec 38.91, adv 3.68, d0 0.91, d1 0.88
+step 63000, time 7174s, loss 42.25, rec 38.60, adv 3.65, d0 0.92, d1 0.90
+step 64000, time 7284s, loss 43.68, rec 39.88, adv 3.79, d0 0.90, d1 0.89
+step 65000, time 7394s, loss 43.79, rec 40.03, adv 3.77, d0 0.94, d1 0.90
+dev loss 33.67, rec 31.69, adv 1.99, d0 1.84, d1 1.71
+saving model...
+--------------------epoch 6--------------------
+learning_rate: 0.0001   gamma: 0.03276800000000001
+step 66000, time 7574s, loss 41.20, rec 37.58, adv 3.62, d0 0.93, d1 0.91
+step 67000, time 7683s, loss 41.84, rec 38.22, adv 3.62, d0 0.93, d1 0.88
+step 68000, time 7794s, loss 42.73, rec 38.98, adv 3.75, d0 0.90, d1 0.88
+step 69000, time 7906s, loss 42.77, rec 39.00, adv 3.76, d0 0.92, d1 0.88
+step 70000, time 8017s, loss 42.35, rec 38.60, adv 3.75, d0 0.90, d1 0.86
+step 71000, time 8127s, loss 40.85, rec 37.10, adv 3.75, d0 0.90, d1 0.87
+step 72000, time 8238s, loss 43.47, rec 39.62, adv 3.85, d0 0.91, d1 0.88
+step 73000, time 8348s, loss 41.47, rec 37.68, adv 3.79, d0 0.91, d1 0.89
+step 74000, time 8458s, loss 41.29, rec 37.52, adv 3.77, d0 0.91, d1 0.88
+step 75000, time 8568s, loss 42.45, rec 38.72, adv 3.73, d0 0.92, d1 0.87
+step 76000, time 8678s, loss 41.59, rec 37.78, adv 3.81, d0 0.92, d1 0.87
+step 77000, time 8789s, loss 42.82, rec 39.02, adv 3.79, d0 0.91, d1 0.87
+step 78000, time 8899s, loss 42.72, rec 38.90, adv 3.82, d0 0.92, d1 0.89
+dev loss 31.82, rec 29.94, adv 1.87, d0 1.79, d1 1.59
+saving model...
+--------------------epoch 7--------------------
+learning_rate: 0.0001   gamma: 0.026214400000000013
+step 79000, time 9079s, loss 41.12, rec 37.50, adv 3.62, d0 0.92, d1 0.90
+step 80000, time 9189s, loss 40.99, rec 37.34, adv 3.65, d0 0.92, d1 0.89
+step 81000, time 9300s, loss 42.37, rec 38.63, adv 3.74, d0 0.91, d1 0.88
+step 82000, time 9412s, loss 41.89, rec 38.21, adv 3.68, d0 0.91, d1 0.91
+step 83000, time 9523s, loss 42.08, rec 38.23, adv 3.85, d0 0.90, d1 0.86
+step 84000, time 9633s, loss 40.21, rec 36.40, adv 3.81, d0 0.88, d1 0.87
+step 85000, time 9744s, loss 41.78, rec 37.95, adv 3.83, d0 0.89, d1 0.86
+step 86000, time 9854s, loss 40.22, rec 36.53, adv 3.68, d0 0.90, d1 0.88
+step 87000, time 9963s, loss 39.46, rec 35.67, adv 3.79, d0 0.89, d1 0.87
+step 88000, time 10073s, loss 41.34, rec 37.48, adv 3.86, d0 0.90, d1 0.87
+step 89000, time 10182s, loss 40.83, rec 36.93, adv 3.90, d0 0.91, d1 0.90
+step 90000, time 10293s, loss 41.07, rec 37.38, adv 3.69, d0 0.90, d1 0.89
+step 91000, time 10404s, loss 41.89, rec 38.05, adv 3.84, d0 0.90, d1 0.88
+dev loss 30.84, rec 28.60, adv 2.25, d0 1.18, d1 1.24
+saving model...
+--------------------epoch 8--------------------
+learning_rate: 0.0001   gamma: 0.02097152000000001
+step 92000, time 10586s, loss 40.32, rec 36.65, adv 3.66, d0 0.90, d1 0.89
+step 93000, time 10696s, loss 39.80, rec 36.14, adv 3.66, d0 0.91, d1 0.89
+step 94000, time 10807s, loss 41.52, rec 37.71, adv 3.80, d0 0.89, d1 0.88
+step 95000, time 10919s, loss 41.42, rec 37.67, adv 3.74, d0 0.94, d1 0.90
+step 96000, time 11029s, loss 39.78, rec 36.06, adv 3.72, d0 0.89, d1 0.87
+step 97000, time 11140s, loss 40.81, rec 36.93, adv 3.88, d0 0.87, d1 0.86
+step 98000, time 11251s, loss 40.91, rec 37.12, adv 3.79, d0 0.90, d1 0.87
+step 99000, time 11362s, loss 40.13, rec 36.34, adv 3.78, d0 0.88, d1 0.88
+step 100000, time 11472s, loss 38.58, rec 34.89, adv 3.69, d0 0.88, d1 0.88
+step 101000, time 11582s, loss 40.88, rec 37.02, adv 3.86, d0 0.88, d1 0.87
+step 102000, time 11693s, loss 40.27, rec 36.39, adv 3.88, d0 0.87, d1 0.87
+step 103000, time 11804s, loss 41.18, rec 37.25, adv 3.93, d0 0.87, d1 0.86
+step 104000, time 11915s, loss 41.41, rec 37.57, adv 3.85, d0 0.89, d1 0.89
+dev loss 30.40, rec 27.97, adv 2.43, d0 1.55, d1 1.46
+saving model...
+--------------------epoch 9--------------------
+learning_rate: 0.0001   gamma: 0.016777216000000008
+step 105000, time 12095s, loss 39.76, rec 35.97, adv 3.79, d0 0.88, d1 0.88
+step 106000, time 12205s, loss 39.05, rec 35.31, adv 3.74, d0 0.90, d1 0.88
+step 107000, time 12316s, loss 41.25, rec 37.34, adv 3.91, d0 0.88, d1 0.86
+step 108000, time 12428s, loss 40.49, rec 36.70, adv 3.79, d0 0.91, d1 0.92
+step 109000, time 12537s, loss 38.80, rec 35.04, adv 3.75, d0 0.90, d1 0.89
+step 110000, time 12647s, loss 39.63, rec 35.73, adv 3.90, d0 0.88, d1 0.87
+step 111000, time 12757s, loss 40.61, rec 36.76, adv 3.85, d0 0.89, d1 0.87
+step 112000, time 12866s, loss 39.68, rec 35.83, adv 3.85, d0 0.88, d1 0.87
+step 113000, time 12975s, loss 37.67, rec 33.94, adv 3.73, d0 0.89, d1 0.89
+step 114000, time 13084s, loss 39.76, rec 35.92, adv 3.84, d0 0.89, d1 0.89
+step 115000, time 13193s, loss 39.20, rec 35.37, adv 3.83, d0 0.90, d1 0.90
+step 116000, time 13303s, loss 39.81, rec 35.97, adv 3.84, d0 0.90, d1 0.89
+step 117000, time 13413s, loss 40.43, rec 36.58, adv 3.85, d0 0.90, d1 0.89
+dev loss 29.12, rec 26.46, adv 2.66, d0 1.11, d1 1.43
+saving model...
+--------------------epoch 10--------------------
+learning_rate: 0.0001   gamma: 0.013421772800000007
+step 118000, time 13593s, loss 38.87, rec 35.13, adv 3.75, d0 0.89, d1 0.88
+step 119000, time 13702s, loss 38.36, rec 34.48, adv 3.88, d0 0.89, d1 0.87
+step 120000, time 13813s, loss 40.14, rec 36.27, adv 3.87, d0 0.88, d1 0.87
+step 121000, time 13925s, loss 40.38, rec 36.56, adv 3.81, d0 0.90, d1 0.89
+step 122000, time 14035s, loss 37.77, rec 33.96, adv 3.81, d0 0.88, d1 0.88
+step 123000, time 14145s, loss 38.79, rec 34.88, adv 3.92, d0 0.87, d1 0.85
+step 124000, time 14257s, loss 39.85, rec 35.94, adv 3.91, d0 0.89, d1 0.87
+step 125000, time 14367s, loss 38.62, rec 34.81, adv 3.82, d0 0.88, d1 0.88
+step 126000, time 14477s, loss 37.44, rec 33.63, adv 3.81, d0 0.89, d1 0.87
+step 127000, time 14586s, loss 38.32, rec 34.51, adv 3.81, d0 0.90, d1 0.87
+step 128000, time 14696s, loss 38.17, rec 34.27, adv 3.90, d0 0.89, d1 0.86
+step 129000, time 14807s, loss 39.76, rec 35.82, adv 3.94, d0 0.88, d1 0.87
+step 130000, time 14918s, loss 39.58, rec 35.67, adv 3.91, d0 0.89, d1 0.87
+dev loss 30.14, rec 27.20, adv 2.94, d0 0.98, d1 1.10
+--------------------epoch 11--------------------
+learning_rate: 0.0001   gamma: 0.010737418240000006
+step 131000, time 15096s, loss 38.13, rec 34.34, adv 3.79, d0 0.89, d1 0.88
+step 132000, time 15206s, loss 37.38, rec 33.63, adv 3.75, d0 0.91, d1 0.87
+step 133000, time 15317s, loss 39.24, rec 35.33, adv 3.91, d0 0.88, d1 0.86
+step 134000, time 15429s, loss 39.44, rec 35.62, adv 3.83, d0 0.91, d1 0.88
+step 135000, time 15539s, loss 36.69, rec 32.99, adv 3.70, d0 0.89, d1 0.88
+step 136000, time 15650s, loss 37.97, rec 34.07, adv 3.90, d0 0.87, d1 0.85
+step 137000, time 15761s, loss 38.63, rec 34.70, adv 3.93, d0 0.87, d1 0.85
+step 138000, time 15872s, loss 38.08, rec 34.19, adv 3.89, d0 0.88, d1 0.86
+step 139000, time 15982s, loss 37.25, rec 33.25, adv 4.00, d0 0.88, d1 0.84
+step 140000, time 16092s, loss 37.81, rec 33.80, adv 4.00, d0 0.89, d1 0.85
+step 141000, time 16201s, loss 37.70, rec 33.71, adv 4.00, d0 0.88, d1 0.86
+step 142000, time 16312s, loss 38.94, rec 35.00, adv 3.94, d0 0.88, d1 0.86
+step 143000, time 16423s, loss 39.15, rec 35.14, adv 4.01, d0 0.89, d1 0.85
+dev loss 27.80, rec 25.55, adv 2.25, d0 1.24, d1 1.48
+saving model...
+--------------------epoch 12--------------------
+learning_rate: 0.0001   gamma: 0.01
+step 144000, time 16606s, loss 37.80, rec 33.92, adv 3.89, d0 0.89, d1 0.86
+step 145000, time 16715s, loss 36.96, rec 33.03, adv 3.93, d0 0.91, d1 0.87
+step 146000, time 16826s, loss 38.78, rec 34.78, adv 4.00, d0 0.89, d1 0.84
+step 147000, time 16939s, loss 39.04, rec 35.11, adv 3.94, d0 0.89, d1 0.86
+step 148000, time 17049s, loss 36.54, rec 32.69, adv 3.85, d0 0.89, d1 0.86
+step 149000, time 17160s, loss 37.59, rec 33.63, adv 3.96, d0 0.86, d1 0.84
+step 150000, time 17271s, loss 38.65, rec 34.67, adv 3.98, d0 0.87, d1 0.86
+step 151000, time 17382s, loss 37.37, rec 33.39, adv 3.97, d0 0.87, d1 0.86
+step 152000, time 17491s, loss 36.33, rec 32.35, adv 3.98, d0 0.89, d1 0.86
+step 153000, time 17601s, loss 37.26, rec 33.29, adv 3.97, d0 0.89, d1 0.86
+step 154000, time 17711s, loss 37.11, rec 33.21, adv 3.90, d0 0.90, d1 0.88
+step 155000, time 17822s, loss 38.22, rec 34.28, adv 3.94, d0 0.88, d1 0.84
+step 156000, time 17932s, loss 38.30, rec 34.24, adv 4.06, d0 0.89, d1 0.86
+dev loss 27.68, rec 25.04, adv 2.64, d0 1.05, d1 1.28
+saving model...
+--------------------epoch 13--------------------
+learning_rate: 0.0001   gamma: 0.01
+step 157000, time 18113s, loss 37.34, rec 33.41, adv 3.93, d0 0.88, d1 0.86
+step 158000, time 18222s, loss 35.91, rec 32.12, adv 3.79, d0 0.91, d1 0.88
+step 159000, time 18334s, loss 38.23, rec 34.32, adv 3.91, d0 0.88, d1 0.85
+step 160000, time 18446s, loss 38.05, rec 34.09, adv 3.97, d0 0.90, d1 0.86
+step 161000, time 18556s, loss 36.02, rec 32.10, adv 3.91, d0 0.89, d1 0.87
+step 162000, time 18667s, loss 37.37, rec 33.37, adv 4.00, d0 0.87, d1 0.85
+step 163000, time 18779s, loss 38.30, rec 34.25, adv 4.05, d0 0.87, d1 0.83
+step 164000, time 18889s, loss 36.82, rec 32.76, adv 4.06, d0 0.88, d1 0.84
+step 165000, time 18999s, loss 36.23, rec 32.27, adv 3.96, d0 0.90, d1 0.88
+step 166000, time 19108s, loss 36.01, rec 32.13, adv 3.88, d0 0.88, d1 0.88
+step 167000, time 19219s, loss 37.01, rec 33.12, adv 3.89, d0 0.88, d1 0.86
+step 168000, time 19329s, loss 37.22, rec 33.38, adv 3.84, d0 0.88, d1 0.87
+step 169000, time 19440s, loss 37.18, rec 33.30, adv 3.87, d0 0.89, d1 0.88
+dev loss 26.77, rec 23.77, adv 2.99, d0 0.90, d1 1.40
+saving model...
+--------------------epoch 14--------------------
+learning_rate: 0.0001   gamma: 0.01
+step 170000, time 19620s, loss 36.69, rec 32.83, adv 3.85, d0 0.89, d1 0.88
+step 171000, time 19729s, loss 35.65, rec 31.82, adv 3.84, d0 0.91, d1 0.85
+step 172000, time 19840s, loss 37.25, rec 33.32, adv 3.93, d0 0.88, d1 0.85
+step 173000, time 19952s, loss 36.91, rec 32.97, adv 3.94, d0 0.92, d1 0.88
+step 174000, time 20062s, loss 36.07, rec 32.22, adv 3.85, d0 0.89, d1 0.86
+step 175000, time 20173s, loss 36.20, rec 32.25, adv 3.95, d0 0.87, d1 0.85
+step 176000, time 20284s, loss 37.26, rec 33.21, adv 4.04, d0 0.87, d1 0.85
+step 177000, time 20394s, loss 35.69, rec 31.77, adv 3.92, d0 0.89, d1 0.86
+step 178000, time 20504s, loss 35.76, rec 31.79, adv 3.97, d0 0.88, d1 0.85
+step 179000, time 20614s, loss 35.95, rec 32.00, adv 3.95, d0 0.88, d1 0.85
+step 180000, time 20724s, loss 36.01, rec 32.05, adv 3.95, d0 0.91, d1 0.86
+step 181000, time 20835s, loss 36.32, rec 32.42, adv 3.90, d0 0.89, d1 0.87
+step 182000, time 20945s, loss 36.50, rec 32.55, adv 3.95, d0 0.88, d1 0.85
+dev loss 24.42, rec 22.25, adv 2.17, d0 1.31, d1 1.40
+saving model...
+--------------------epoch 15--------------------
+learning_rate: 0.0001   gamma: 0.01
+step 183000, time 21125s, loss 36.30, rec 32.38, adv 3.92, d0 0.88, d1 0.86
+step 184000, time 21235s, loss 34.26, rec 30.48, adv 3.78, d0 0.91, d1 0.87
+step 185000, time 21346s, loss 36.98, rec 33.09, adv 3.89, d0 0.88, d1 0.86
+step 186000, time 21458s, loss 36.64, rec 32.73, adv 3.91, d0 0.89, d1 0.86
+step 186000, time 21458s, loss 36.64, rec 32.73, adv 3.91, d0 0.89, d1 0.86
+step 187000, time 21568s, loss 35.16, rec 31.36, adv 3.81, d0 0.89, d1 0.86
+step 188000, time 21679s, loss 35.40, rec 31.46, adv 3.94, d0 0.86, d1 0.84
+step 189000, time 21790s, loss 36.19, rec 32.22, adv 3.98, d0 0.89, d1 0.84
+step 190000, time 21900s, loss 35.63, rec 31.73, adv 3.90, d0 0.88, d1 0.85
+step 191000, time 22011s, loss 35.87, rec 31.80, adv 4.07, d0 0.88, d1 0.84
+step 192000, time 22121s, loss 34.79, rec 30.85, adv 3.93, d0 0.89, d1 0.86
+step 193000, time 22230s, loss 35.90, rec 31.80, adv 4.10, d0 0.90, d1 0.87
+step 194000, time 22341s, loss 36.02, rec 32.05, adv 3.97, d0 0.87, d1 0.85
+step 195000, time 22452s, loss 36.51, rec 32.45, adv 4.06, d0 0.88, d1 0.83
+dev loss 24.98, rec 22.43, adv 2.55, d0 1.18, d1 1.35
+--------------------epoch 16--------------------
+learning_rate: 0.0001   gamma: 0.01
+step 196000, time 22632s, loss 36.12, rec 32.12, adv 4.00, d0 0.88, d1 0.86
+step 197000, time 22742s, loss 33.54, rec 29.80, adv 3.74, d0 0.90, d1 0.88
+step 198000, time 22853s, loss 36.73, rec 32.89, adv 3.83, d0 0.88, d1 0.85
+step 199000, time 22965s, loss 41.32, rec 37.10, adv 4.22, d0 0.86, d1 0.77
+step 200000, time 23076s, loss 47.81, rec 42.28, adv 5.53, d0 0.75, d1 0.61
+step 201000, time 23188s, loss 45.35, rec 39.50, adv 5.86, d0 0.71, d1 0.61
+step 202000, time 23300s, loss 43.56, rec 37.92, adv 5.65, d0 0.72, d1 0.64
+step 203000, time 23412s, loss 40.45, rec 35.30, adv 5.15, d0 0.74, d1 0.69
+step 204000, time 23523s, loss 38.95, rec 34.14, adv 4.82, d0 0.77, d1 0.73
+step 205000, time 23635s, loss 36.91, rec 32.46, adv 4.45, d0 0.79, d1 0.76
+step 206000, time 23746s, loss 36.97, rec 32.67, adv 4.30, d0 0.80, d1 0.79
+step 207000, time 23857s, loss 36.19, rec 32.00, adv 4.18, d0 0.81, d1 0.80

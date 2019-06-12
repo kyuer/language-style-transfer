@@ -31,7 +31,7 @@ def load_arguments():
             default='../tmp/model')
     argparser.add_argument('--load_model',
             type=bool,
-            default=True)
+            default=True) ##############??
 
     argparser.add_argument('--batch_size',
             type=int,
@@ -51,7 +51,7 @@ def load_arguments():
 
     argparser.add_argument('--beam',
             type=int,
-            default=8)
+            default=8)  #########
     argparser.add_argument('--dropout_keep_prob',
             type=float,
             default=0.5)
@@ -84,7 +84,7 @@ def load_arguments():
             default=1)
     argparser.add_argument('--gamma_min',
             type=float,
-            default=0.1)
+            default=0.1)  ######
     argparser.add_argument('--filter_sizes',
             type=str,
             default='1,2,3,4,5')

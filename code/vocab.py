@@ -1,7 +1,6 @@
 import numpy as np
 from numpy import linalg as LA
 import pickle
-import random
 from collections import Counter
 
 class Vocabulary(object):
@@ -9,7 +8,7 @@ class Vocabulary(object):
         with open(vocab_file, 'rb') as f:
             self.size, self.word2id, self.id2word = pickle.load(f)
         self.dim_emb = dim_emb
-        self.embedding = np.random.random_sample(
+        self.embedding = np.random.random_sample(  #numpy.random.random_sample(size=None)以给定形状返回[0,1)之间的随机浮点数
             (self.size, self.dim_emb)) - 0.5
 
         if emb_file:

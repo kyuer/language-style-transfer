@@ -44,8 +44,8 @@ def noise(x, unk, word_drop=0.0, k=3):
 
 def get_batch(x, y, word2id, noisy=False, min_len=5):
     pad = word2id['<pad>']
-    go = word2id['<go>']
-    eos = word2id['<eos>']
+    go = word2id['<go>']   # start
+    eos = word2id['<eos>'] # end of sentence
     unk = word2id['<unk>']
 
     rev_x, go_x, x_eos, weights = [], [], [], []

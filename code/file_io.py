@@ -20,7 +20,7 @@ def load_sent(path, max_size=-1):
 
 def load_sent_cn(path, max_size=-1, max_seq_length=20):
     data = []
-    with open(path,mode="r",encoding="utf-8") as f:
+    with open(path, mode="r", encoding="utf-8") as f:
         line_ = []
         for line in f:
             if len(data) == max_size:
